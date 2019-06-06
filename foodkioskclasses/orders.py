@@ -15,8 +15,9 @@ class Orders():
     def calcOrderTotal(self):
         total = 0.00
         for m in self.menuitems:
-            total += m.getMenuItems
+            total += m.getMenuItems().itemPrice * m.quantity
+            payment = Payment(total)
+            return payment
 
-    
     def __str__(self):
         return self.orderID + "Your total is: " + self.orderStatus
