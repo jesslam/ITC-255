@@ -1,12 +1,12 @@
 from menuitem import MenuItem
-from order import Order
+from orders import Orders
 
 class OrderDetail():
-    def __init__(self, orderID, quantity, orderDateTime, orderStatus):
+    def __init__(self, orderID, quantity, orderDate, orderStatus):
         self.menuitems = []
         self.orderID = orderID
         self.quantity = quantity
-        self.orderDateTime = datetime.datetime.now()
+        self.orderDate = orderDate
         self.orderStatus = orderStatus
 
     def getMenuItems(self):
@@ -15,8 +15,8 @@ class OrderDetail():
     def getQuantity(self):
         return self.quantity
 
-    def getOrderDateTime(self):
-        return self.orderDateTime
+    def getOrderDate(self):
+        return self.orderDate
 
     def getOrderStatus(self):
         return self.orderStatus

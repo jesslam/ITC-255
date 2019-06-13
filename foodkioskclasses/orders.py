@@ -20,4 +20,4 @@ class Orders():
             return payment
 
     def __str__(self):
-        return self.orderID + "Your total is: " + self.orderStatus
+        return "Order number: " + str(self.orderID)

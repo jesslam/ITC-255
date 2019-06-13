@@ -12,6 +12,4 @@ class Payment():
 
     def getPaymentAmt(self):
         return self.paymentAmt
-
-    def __str__(self):
         

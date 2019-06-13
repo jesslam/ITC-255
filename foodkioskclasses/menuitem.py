@@ -17,5 +17,4 @@ class MenuItem():
     def getItemPrice(self):
         return self.itemPrice
 
-
         
